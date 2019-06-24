@@ -8,4 +8,7 @@ The Guitarduino tuner does what any guitar tuner should do; tells you if your gu
 
 <img src="./tuner-schematic-1024x730.png" data-canonical-src="./tuner-schematic-1024x730.png" width="512" height="365"/>
 
+The Guitarduino Tuner uses a TL-082 Op-Amp to amplify and send the frequency signals to the Arduino. Once the Arduino receives the signal, it converts the signal to a frequency value using an FFT algorithm, and then uses the value of the most dominant frequency to determine what note is being played.
 
+Here is a video of the signal the op-amp is sending the Arduino shown by an oscilloscope:
+https://youtu.be/61w8PFVtrfY
